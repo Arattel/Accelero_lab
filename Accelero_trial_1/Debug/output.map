@@ -6472,7 +6472,7 @@ LOAD /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000198                . = ALIGN (0x4)
 
-.text           0x00000000080001c0     0xc290
+.text           0x00000000080001c0     0xc220
                 0x00000000080001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080001c0       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -6877,569 +6877,576 @@ LOAD /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none
                 0x00000000080054c2       0x1a Src/lsm303dlhc.o
                 0x00000000080054c2                LSM303DLHC_AccZClickITConfig
  .text.get_result_accelero
-                0x00000000080054dc       0xb4 Src/main.o
+                0x00000000080054dc       0xe0 Src/main.o
                 0x00000000080054dc                get_result_accelero
  .text.get_result_gyro
-                0x0000000008005590       0xa4 Src/main.o
-                0x0000000008005590                get_result_gyro
+                0x00000000080055bc       0xd0 Src/main.o
+                0x00000000080055bc                get_result_gyro
+ .text.new_data
+                0x000000000800568c       0x20 Src/main.o
+                0x000000000800568c                new_data
+ .text.print_results
+                0x00000000080056ac       0xb4 Src/main.o
+                0x00000000080056ac                print_results
  .text._Error_Handler
-                0x0000000008005634        0x2 Src/main.o
-                0x0000000008005634                _Error_Handler
- *fill*         0x0000000008005636        0x2 
+                0x0000000008005760        0x2 Src/main.o
+                0x0000000008005760                _Error_Handler
+ *fill*         0x0000000008005762        0x2 
  .text.SystemClock_Config
-                0x0000000008005638       0xe8 Src/main.o
-                0x0000000008005638                SystemClock_Config
- .text.main     0x0000000008005720      0x300 Src/main.o
-                0x0000000008005720                main
+                0x0000000008005764       0xe4 Src/main.o
+                0x0000000008005764                SystemClock_Config
+ .text.main     0x0000000008005848      0x168 Src/main.o
+                0x0000000008005848                main
  .text.assert_failed
-                0x0000000008005a20        0x2 Src/main.o
-                0x0000000008005a20                assert_failed
- *fill*         0x0000000008005a22        0x2 
+                0x00000000080059b0        0x2 Src/main.o
+                0x00000000080059b0                assert_failed
+ *fill*         0x00000000080059b2        0x2 
  .text.MX_SPI1_Init
-                0x0000000008005a24       0x48 Src/spi.o
-                0x0000000008005a24                MX_SPI1_Init
+                0x00000000080059b4       0x48 Src/spi.o
+                0x00000000080059b4                MX_SPI1_Init
  .text.MX_SPI5_Init
-                0x0000000008005a6c       0x4c Src/spi.o
-                0x0000000008005a6c                MX_SPI5_Init
+                0x00000000080059fc       0x4c Src/spi.o
+                0x00000000080059fc                MX_SPI5_Init
  .text.HAL_SPI_MspInit
-                0x0000000008005ab8       0xac Src/spi.o
-                0x0000000008005ab8                HAL_SPI_MspInit
+                0x0000000008005a48       0xac Src/spi.o
+                0x0000000008005a48                HAL_SPI_MspInit
  .text.HAL_SPI_MspDeInit
-                0x0000000008005b64       0x5c Src/spi.o
-                0x0000000008005b64                HAL_SPI_MspDeInit
+                0x0000000008005af4       0x5c Src/spi.o
+                0x0000000008005af4                HAL_SPI_MspDeInit
  .text.SPIx_MspInit
-                0x0000000008005bc0       0x58 Src/stm32f411e_discovery.o
+                0x0000000008005b50       0x58 Src/stm32f411e_discovery.o
  .text.I2Cx_MspInit
-                0x0000000008005c18       0x88 Src/stm32f411e_discovery.o
+                0x0000000008005ba8       0x88 Src/stm32f411e_discovery.o
  .text.SPIx_Init
-                0x0000000008005ca0       0x4c Src/stm32f411e_discovery.o
+                0x0000000008005c30       0x4c Src/stm32f411e_discovery.o
  .text.SPIx_Error
-                0x0000000008005cec       0x14 Src/stm32f411e_discovery.o
+                0x0000000008005c7c       0x14 Src/stm32f411e_discovery.o
  .text.SPIx_WriteRead
-                0x0000000008005d00       0x3c Src/stm32f411e_discovery.o
+                0x0000000008005c90       0x3c Src/stm32f411e_discovery.o
  .text.I2Cx_Init
-                0x0000000008005d3c       0x4c Src/stm32f411e_discovery.o
+                0x0000000008005ccc       0x4c Src/stm32f411e_discovery.o
  .text.I2Cx_Error
-                0x0000000008005d88       0x14 Src/stm32f411e_discovery.o
+                0x0000000008005d18       0x14 Src/stm32f411e_discovery.o
  .text.I2Cx_WriteData
-                0x0000000008005d9c       0x34 Src/stm32f411e_discovery.o
+                0x0000000008005d2c       0x34 Src/stm32f411e_discovery.o
  .text.I2Cx_ReadData
-                0x0000000008005dd0       0x3c Src/stm32f411e_discovery.o
+                0x0000000008005d60       0x3c Src/stm32f411e_discovery.o
  .text.GYRO_IO_Init
-                0x0000000008005e0c       0x7c Src/stm32f411e_discovery.o
-                0x0000000008005e0c                GYRO_IO_Init
+                0x0000000008005d9c       0x7c Src/stm32f411e_discovery.o
+                0x0000000008005d9c                GYRO_IO_Init
  .text.GYRO_IO_Write
-                0x0000000008005e88       0x44 Src/stm32f411e_discovery.o
-                0x0000000008005e88                GYRO_IO_Write
+                0x0000000008005e18       0x44 Src/stm32f411e_discovery.o
+                0x0000000008005e18                GYRO_IO_Write
  .text.GYRO_IO_Read
-                0x0000000008005ecc       0x48 Src/stm32f411e_discovery.o
-                0x0000000008005ecc                GYRO_IO_Read
+                0x0000000008005e5c       0x48 Src/stm32f411e_discovery.o
+                0x0000000008005e5c                GYRO_IO_Read
  .text.COMPASSACCELERO_IO_Init
-                0x0000000008005f14       0x44 Src/stm32f411e_discovery.o
-                0x0000000008005f14                COMPASSACCELERO_IO_Init
+                0x0000000008005ea4       0x44 Src/stm32f411e_discovery.o
+                0x0000000008005ea4                COMPASSACCELERO_IO_Init
  .text.COMPASSACCELERO_IO_ITConfig
-                0x0000000008005f58       0x54 Src/stm32f411e_discovery.o
-                0x0000000008005f58                COMPASSACCELERO_IO_ITConfig
+                0x0000000008005ee8       0x54 Src/stm32f411e_discovery.o
+                0x0000000008005ee8                COMPASSACCELERO_IO_ITConfig
  .text.COMPASSACCELERO_IO_Write
-                0x0000000008005fac        0x8 Src/stm32f411e_discovery.o
-                0x0000000008005fac                COMPASSACCELERO_IO_Write
+                0x0000000008005f3c        0x8 Src/stm32f411e_discovery.o
+                0x0000000008005f3c                COMPASSACCELERO_IO_Write
  .text.COMPASSACCELERO_IO_Read
-                0x0000000008005fb4        0x8 Src/stm32f411e_discovery.o
-                0x0000000008005fb4                COMPASSACCELERO_IO_Read
+                0x0000000008005f44        0x8 Src/stm32f411e_discovery.o
+                0x0000000008005f44                COMPASSACCELERO_IO_Read
  .text.BSP_ACCELERO_Init
-                0x0000000008005fbc       0x34 Src/stm32f411e_discovery_accelerometer.o
-                0x0000000008005fbc                BSP_ACCELERO_Init
+                0x0000000008005f4c       0x34 Src/stm32f411e_discovery_accelerometer.o
+                0x0000000008005f4c                BSP_ACCELERO_Init
  .text.BSP_ACCELERO_GetXYZ
-                0x0000000008005ff0       0x34 Src/stm32f411e_discovery_accelerometer.o
-                0x0000000008005ff0                BSP_ACCELERO_GetXYZ
+                0x0000000008005f80       0x34 Src/stm32f411e_discovery_accelerometer.o
+                0x0000000008005f80                BSP_ACCELERO_GetXYZ
  .text.BSP_GYRO_Init
-                0x0000000008006024       0x44 Src/stm32f411e_discovery_gyroscope.o
-                0x0000000008006024                BSP_GYRO_Init
+                0x0000000008005fb4       0x44 Src/stm32f411e_discovery_gyroscope.o
+                0x0000000008005fb4                BSP_GYRO_Init
  .text.BSP_GYRO_GetXYZ
-                0x0000000008006068       0x14 Src/stm32f411e_discovery_gyroscope.o
-                0x0000000008006068                BSP_GYRO_GetXYZ
+                0x0000000008005ff8       0x14 Src/stm32f411e_discovery_gyroscope.o
+                0x0000000008005ff8                BSP_GYRO_GetXYZ
  .text.HAL_MspInit
-                0x000000000800607c       0x94 Src/stm32f4xx_hal_msp.o
-                0x000000000800607c                HAL_MspInit
+                0x000000000800600c       0x94 Src/stm32f4xx_hal_msp.o
+                0x000000000800600c                HAL_MspInit
  .text.NMI_Handler
-                0x0000000008006110        0x2 Src/stm32f4xx_it.o
-                0x0000000008006110                NMI_Handler
+                0x00000000080060a0        0x2 Src/stm32f4xx_it.o
+                0x00000000080060a0                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008006112        0x2 Src/stm32f4xx_it.o
-                0x0000000008006112                HardFault_Handler
+                0x00000000080060a2        0x2 Src/stm32f4xx_it.o
+                0x00000000080060a2                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008006114        0x2 Src/stm32f4xx_it.o
-                0x0000000008006114                MemManage_Handler
+                0x00000000080060a4        0x2 Src/stm32f4xx_it.o
+                0x00000000080060a4                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008006116        0x2 Src/stm32f4xx_it.o
-                0x0000000008006116                BusFault_Handler
+                0x00000000080060a6        0x2 Src/stm32f4xx_it.o
+                0x00000000080060a6                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008006118        0x2 Src/stm32f4xx_it.o
-                0x0000000008006118                UsageFault_Handler
+                0x00000000080060a8        0x2 Src/stm32f4xx_it.o
+                0x00000000080060a8                UsageFault_Handler
  .text.SVC_Handler
-                0x000000000800611a        0x2 Src/stm32f4xx_it.o
-                0x000000000800611a                SVC_Handler
+                0x00000000080060aa        0x2 Src/stm32f4xx_it.o
+                0x00000000080060aa                SVC_Handler
  .text.DebugMon_Handler
-                0x000000000800611c        0x2 Src/stm32f4xx_it.o
-                0x000000000800611c                DebugMon_Handler
+                0x00000000080060ac        0x2 Src/stm32f4xx_it.o
+                0x00000000080060ac                DebugMon_Handler
  .text.PendSV_Handler
-                0x000000000800611e        0x2 Src/stm32f4xx_it.o
-                0x000000000800611e                PendSV_Handler
+                0x00000000080060ae        0x2 Src/stm32f4xx_it.o
+                0x00000000080060ae                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008006120        0xc Src/stm32f4xx_it.o
-                0x0000000008006120                SysTick_Handler
+                0x00000000080060b0        0xc Src/stm32f4xx_it.o
+                0x00000000080060b0                SysTick_Handler
  .text.OTG_FS_IRQHandler
-                0x000000000800612c       0x10 Src/stm32f4xx_it.o
-                0x000000000800612c                OTG_FS_IRQHandler
+                0x00000000080060bc       0x10 Src/stm32f4xx_it.o
+                0x00000000080060bc                OTG_FS_IRQHandler
  .text.SystemInit
-                0x000000000800613c       0x4c Src/system_stm32f4xx.o
-                0x000000000800613c                SystemInit
+                0x00000000080060cc       0x4c Src/system_stm32f4xx.o
+                0x00000000080060cc                SystemInit
  .text.MX_USB_OTG_FS_HCD_Init
-                0x0000000008006188       0x38 Src/usb_otg.o
-                0x0000000008006188                MX_USB_OTG_FS_HCD_Init
+                0x0000000008006118       0x38 Src/usb_otg.o
+                0x0000000008006118                MX_USB_OTG_FS_HCD_Init
  .text.HAL_HCD_MspInit
-                0x00000000080061c0       0x7c Src/usb_otg.o
-                0x00000000080061c0                HAL_HCD_MspInit
+                0x0000000008006150       0x7c Src/usb_otg.o
+                0x0000000008006150                HAL_HCD_MspInit
  .text.Reset_Handler
-                0x000000000800623c       0x50 startup/startup_stm32f411xe.o
-                0x000000000800623c                Reset_Handler
+                0x00000000080061cc       0x50 startup/startup_stm32f411xe.o
+                0x00000000080061cc                Reset_Handler
  .text.Default_Handler
-                0x000000000800628c        0x2 startup/startup_stm32f411xe.o
-                0x000000000800628c                RTC_Alarm_IRQHandler
-                0x000000000800628c                EXTI2_IRQHandler
-                0x000000000800628c                SPI4_IRQHandler
-                0x000000000800628c                TIM1_CC_IRQHandler
-                0x000000000800628c                DMA2_Stream5_IRQHandler
-                0x000000000800628c                DMA1_Stream5_IRQHandler
-                0x000000000800628c                PVD_IRQHandler
-                0x000000000800628c                SDIO_IRQHandler
-                0x000000000800628c                TAMP_STAMP_IRQHandler
-                0x000000000800628c                EXTI3_IRQHandler
-                0x000000000800628c                TIM1_UP_TIM10_IRQHandler
-                0x000000000800628c                I2C3_ER_IRQHandler
-                0x000000000800628c                EXTI0_IRQHandler
-                0x000000000800628c                I2C2_EV_IRQHandler
-                0x000000000800628c                DMA1_Stream2_IRQHandler
-                0x000000000800628c                FPU_IRQHandler
-                0x000000000800628c                DMA2_Stream2_IRQHandler
-                0x000000000800628c                SPI1_IRQHandler
-                0x000000000800628c                TIM1_BRK_TIM9_IRQHandler
-                0x000000000800628c                DMA2_Stream3_IRQHandler
-                0x000000000800628c                USART6_IRQHandler
-                0x000000000800628c                DMA2_Stream0_IRQHandler
-                0x000000000800628c                TIM4_IRQHandler
-                0x000000000800628c                I2C1_EV_IRQHandler
-                0x000000000800628c                DMA1_Stream6_IRQHandler
-                0x000000000800628c                DMA1_Stream1_IRQHandler
-                0x000000000800628c                TIM3_IRQHandler
-                0x000000000800628c                RCC_IRQHandler
-                0x000000000800628c                Default_Handler
-                0x000000000800628c                EXTI15_10_IRQHandler
-                0x000000000800628c                ADC_IRQHandler
-                0x000000000800628c                DMA1_Stream7_IRQHandler
-                0x000000000800628c                SPI5_IRQHandler
-                0x000000000800628c                TIM5_IRQHandler
-                0x000000000800628c                DMA2_Stream7_IRQHandler
-                0x000000000800628c                I2C3_EV_IRQHandler
-                0x000000000800628c                EXTI9_5_IRQHandler
-                0x000000000800628c                RTC_WKUP_IRQHandler
-                0x000000000800628c                SPI2_IRQHandler
-                0x000000000800628c                DMA1_Stream0_IRQHandler
-                0x000000000800628c                EXTI4_IRQHandler
-                0x000000000800628c                WWDG_IRQHandler
-                0x000000000800628c                TIM2_IRQHandler
-                0x000000000800628c                OTG_FS_WKUP_IRQHandler
-                0x000000000800628c                TIM1_TRG_COM_TIM11_IRQHandler
-                0x000000000800628c                EXTI1_IRQHandler
-                0x000000000800628c                USART2_IRQHandler
-                0x000000000800628c                I2C2_ER_IRQHandler
-                0x000000000800628c                DMA2_Stream1_IRQHandler
-                0x000000000800628c                FLASH_IRQHandler
-                0x000000000800628c                DMA2_Stream4_IRQHandler
-                0x000000000800628c                USART1_IRQHandler
-                0x000000000800628c                SPI3_IRQHandler
-                0x000000000800628c                DMA1_Stream4_IRQHandler
-                0x000000000800628c                I2C1_ER_IRQHandler
-                0x000000000800628c                DMA2_Stream6_IRQHandler
-                0x000000000800628c                DMA1_Stream3_IRQHandler
- *fill*         0x000000000800628e        0x2 
- .text.sqrt     0x0000000008006290       0xb8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
-                0x0000000008006290                sqrt
+                0x000000000800621c        0x2 startup/startup_stm32f411xe.o
+                0x000000000800621c                RTC_Alarm_IRQHandler
+                0x000000000800621c                EXTI2_IRQHandler
+                0x000000000800621c                SPI4_IRQHandler
+                0x000000000800621c                TIM1_CC_IRQHandler
+                0x000000000800621c                DMA2_Stream5_IRQHandler
+                0x000000000800621c                DMA1_Stream5_IRQHandler
+                0x000000000800621c                PVD_IRQHandler
+                0x000000000800621c                SDIO_IRQHandler
+                0x000000000800621c                TAMP_STAMP_IRQHandler
+                0x000000000800621c                EXTI3_IRQHandler
+                0x000000000800621c                TIM1_UP_TIM10_IRQHandler
+                0x000000000800621c                I2C3_ER_IRQHandler
+                0x000000000800621c                EXTI0_IRQHandler
+                0x000000000800621c                I2C2_EV_IRQHandler
+                0x000000000800621c                DMA1_Stream2_IRQHandler
+                0x000000000800621c                FPU_IRQHandler
+                0x000000000800621c                DMA2_Stream2_IRQHandler
+                0x000000000800621c                SPI1_IRQHandler
+                0x000000000800621c                TIM1_BRK_TIM9_IRQHandler
+                0x000000000800621c                DMA2_Stream3_IRQHandler
+                0x000000000800621c                USART6_IRQHandler
+                0x000000000800621c                DMA2_Stream0_IRQHandler
+                0x000000000800621c                TIM4_IRQHandler
+                0x000000000800621c                I2C1_EV_IRQHandler
+                0x000000000800621c                DMA1_Stream6_IRQHandler
+                0x000000000800621c                DMA1_Stream1_IRQHandler
+                0x000000000800621c                TIM3_IRQHandler
+                0x000000000800621c                RCC_IRQHandler
+                0x000000000800621c                Default_Handler
+                0x000000000800621c                EXTI15_10_IRQHandler
+                0x000000000800621c                ADC_IRQHandler
+                0x000000000800621c                DMA1_Stream7_IRQHandler
+                0x000000000800621c                SPI5_IRQHandler
+                0x000000000800621c                TIM5_IRQHandler
+                0x000000000800621c                DMA2_Stream7_IRQHandler
+                0x000000000800621c                I2C3_EV_IRQHandler
+                0x000000000800621c                EXTI9_5_IRQHandler
+                0x000000000800621c                RTC_WKUP_IRQHandler
+                0x000000000800621c                SPI2_IRQHandler
+                0x000000000800621c                DMA1_Stream0_IRQHandler
+                0x000000000800621c                EXTI4_IRQHandler
+                0x000000000800621c                WWDG_IRQHandler
+                0x000000000800621c                TIM2_IRQHandler
+                0x000000000800621c                OTG_FS_WKUP_IRQHandler
+                0x000000000800621c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x000000000800621c                EXTI1_IRQHandler
+                0x000000000800621c                USART2_IRQHandler
+                0x000000000800621c                I2C2_ER_IRQHandler
+                0x000000000800621c                DMA2_Stream1_IRQHandler
+                0x000000000800621c                FLASH_IRQHandler
+                0x000000000800621c                DMA2_Stream4_IRQHandler
+                0x000000000800621c                USART1_IRQHandler
+                0x000000000800621c                SPI3_IRQHandler
+                0x000000000800621c                DMA1_Stream4_IRQHandler
+                0x000000000800621c                I2C1_ER_IRQHandler
+                0x000000000800621c                DMA2_Stream6_IRQHandler
+                0x000000000800621c                DMA1_Stream3_IRQHandler
+ *fill*         0x000000000800621e        0x2 
+ .text.sqrt     0x0000000008006220       0xb8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
+                0x0000000008006220                sqrt
  .text.__ieee754_sqrt
-                0x0000000008006348      0x194 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-e_sqrt.o)
-                0x0000000008006348                __ieee754_sqrt
- .text.matherr  0x00000000080064dc        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
-                0x00000000080064dc                matherr
- .text.__errno  0x00000000080064e0        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
-                0x00000000080064e0                __errno
+                0x00000000080062d8      0x194 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-e_sqrt.o)
+                0x00000000080062d8                __ieee754_sqrt
+ .text.matherr  0x000000000800646c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
+                0x000000000800646c                matherr
+ .text.__errno  0x0000000008006470        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+                0x0000000008006470                __errno
  .text.__libc_init_array
-                0x00000000080064ec       0x48 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
-                0x00000000080064ec                __libc_init_array
+                0x000000000800647c       0x48 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+                0x000000000800647c                __libc_init_array
  .text.__locale_mb_cur_max
-                0x0000000008006534       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
-                0x0000000008006534                __locale_mb_cur_max
+                0x00000000080064c4       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x00000000080064c4                __locale_mb_cur_max
  .text.__locale_ctype_ptr
-                0x0000000008006550       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
-                0x0000000008006550                __locale_ctype_ptr
+                0x00000000080064e0       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x00000000080064e0                __locale_ctype_ptr
  .text.__ascii_mbtowc
-                0x000000000800656c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
-                0x000000000800656c                __ascii_mbtowc
- .text.memset   0x0000000008006598       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
-                0x0000000008006598                memset
- .text.printf   0x000000000800662c       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
-                0x000000000800662c                printf
- .text.sprintf  0x0000000008006654       0x44 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
-                0x0000000008006654                sprintf
+                0x00000000080064fc       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
+                0x00000000080064fc                __ascii_mbtowc
+ .text.memset   0x0000000008006528       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+                0x0000000008006528                memset
+ .text.printf   0x00000000080065bc       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
+                0x00000000080065bc                printf
+ .text.sprintf  0x00000000080065e4       0x44 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
+                0x00000000080065e4                sprintf
  .text._svfprintf_r
-                0x0000000008006698     0x144c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
-                0x0000000008006698                _svfprintf_r
- *fill*         0x0000000008007ae4        0x4 
+                0x0000000008006628     0x144c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x0000000008006628                _svfprintf_r
+ *fill*         0x0000000008007a74        0x4 
  .text._vfprintf_r
-                0x0000000008007ae8     0x150c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
-                0x0000000008007ae8                _vfprintf_r
+                0x0000000008007a78     0x150c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x0000000008007a78                _vfprintf_r
  .text.__sbprintf
-                0x0000000008008ff4       0x84 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x0000000008008f84       0x84 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .text.__ascii_wctomb
-                0x0000000008009078       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
-                0x0000000008009078                __ascii_wctomb
+                0x0000000008009008       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
+                0x0000000008009008                __ascii_wctomb
  .text.__swsetup_r
-                0x0000000008009094       0xcc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
-                0x0000000008009094                __swsetup_r
+                0x0000000008009024       0xcc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
+                0x0000000008009024                __swsetup_r
  .text.startup.register_fini
-                0x0000000008009160       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000008009174        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
-                0x0000000008009174                atexit
- .text.quorem   0x0000000008009180      0x124 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
- *fill*         0x00000000080092a4        0x4 
- .text._dtoa_r  0x00000000080092a8      0xe28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
-                0x00000000080092a8                _dtoa_r
+                0x00000000080090f0       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000008009104        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+                0x0000000008009104                atexit
+ .text.quorem   0x0000000008009110      0x124 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+ *fill*         0x0000000008009234        0x4 
+ .text._dtoa_r  0x0000000008009238      0xe28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x0000000008009238                _dtoa_r
  .text.__sflush_r
-                0x000000000800a0d0      0x154 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000000800a0d0                __sflush_r
+                0x000000000800a060      0x154 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000000800a060                __sflush_r
  .text._fflush_r
-                0x000000000800a224       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
-                0x000000000800a224                _fflush_r
- .text.std      0x000000000800a280       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800a1b4       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+                0x000000000800a1b4                _fflush_r
+ .text.std      0x000000000800a210       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000000800a2d0        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800a2d0                _cleanup_r
- .text.__sinit  0x000000000800a2dc       0x58 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800a2dc                __sinit
+                0x000000000800a260        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800a260                _cleanup_r
+ .text.__sinit  0x000000000800a26c       0x58 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800a26c                __sinit
  .text.__sfp_lock_acquire
-                0x000000000800a334        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800a334                __sfp_lock_acquire
+                0x000000000800a2c4        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800a2c4                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x000000000800a340        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
-                0x000000000800a340                __sfp_lock_release
+                0x000000000800a2d0        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+                0x000000000800a2d0                __sfp_lock_release
  .text.__libc_fini_array
-                0x000000000800a34c       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
-                0x000000000800a34c                __libc_fini_array
+                0x000000000800a2dc       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+                0x000000000800a2dc                __libc_fini_array
  .text._malloc_trim_r
-                0x000000000800a380       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000000800a380                _malloc_trim_r
- .text._free_r  0x000000000800a420      0x1e8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
-                0x000000000800a420                _free_r
+                0x000000000800a310       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000000800a310                _malloc_trim_r
+ .text._free_r  0x000000000800a3b0      0x1e8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+                0x000000000800a3b0                _free_r
  .text._fwalk_reent
-                0x000000000800a608       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
-                0x000000000800a608                _fwalk_reent
+                0x000000000800a598       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
+                0x000000000800a598                _fwalk_reent
  .text._localeconv_r
-                0x000000000800a65c       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
-                0x000000000800a65c                _localeconv_r
+                0x000000000800a5ec       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
+                0x000000000800a5ec                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x000000000800a678        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800a678                __retarget_lock_init_recursive
+                0x000000000800a608        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800a608                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x000000000800a67c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800a67c                __retarget_lock_close_recursive
+                0x000000000800a60c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800a60c                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x000000000800a680        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800a680                __retarget_lock_acquire_recursive
+                0x000000000800a610        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800a610                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000800a684        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
-                0x000000000800a684                __retarget_lock_release_recursive
+                0x000000000800a614        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+                0x000000000800a614                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x000000000800a688       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000000800a688                __swhatbuf_r
+                0x000000000800a618       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000000800a618                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000800a6e4       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
-                0x000000000800a6e4                __smakebuf_r
+                0x000000000800a674       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+                0x000000000800a674                __smakebuf_r
  .text._malloc_r
-                0x000000000800a778      0x548 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
-                0x000000000800a778                _malloc_r
+                0x000000000800a708      0x548 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
+                0x000000000800a708                _malloc_r
  .text.__malloc_lock
-                0x000000000800acc0        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000000800acc0                __malloc_lock
+                0x000000000800ac50        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000000800ac50                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800accc        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
-                0x000000000800accc                __malloc_unlock
- .text._Balloc  0x000000000800acd8       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800acd8                _Balloc
- .text._Bfree   0x000000000800ad24       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800ad24                _Bfree
+                0x000000000800ac5c        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+                0x000000000800ac5c                __malloc_unlock
+ .text._Balloc  0x000000000800ac68       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ac68                _Balloc
+ .text._Bfree   0x000000000800acb4       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800acb4                _Bfree
  .text.__multadd
-                0x000000000800ad38       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800ad38                __multadd
+                0x000000000800acc8       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800acc8                __multadd
  .text.__hi0bits
-                0x000000000800adb8       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800adb8                __hi0bits
+                0x000000000800ad48       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ad48                __hi0bits
  .text.__lo0bits
-                0x000000000800adf8       0x60 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800adf8                __lo0bits
- .text.__i2b    0x000000000800ae58       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800ae58                __i2b
+                0x000000000800ad88       0x60 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ad88                __lo0bits
+ .text.__i2b    0x000000000800ade8       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ade8                __i2b
  .text.__multiply
-                0x000000000800ae6c      0x14c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800ae6c                __multiply
+                0x000000000800adfc      0x14c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800adfc                __multiply
  .text.__pow5mult
-                0x000000000800afb8       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800afb8                __pow5mult
+                0x000000000800af48       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800af48                __pow5mult
  .text.__lshift
-                0x000000000800b058       0xac /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800b058                __lshift
- .text.__mcmp   0x000000000800b104       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800b104                __mcmp
- .text.__mdiff  0x000000000800b13c       0xec /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800b13c                __mdiff
- .text.__d2b    0x000000000800b228       0xc4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800b228                __d2b
- .text._sbrk_r  0x000000000800b2ec       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
-                0x000000000800b2ec                _sbrk_r
- .text.__sread  0x000000000800b310       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800b310                __sread
+                0x000000000800afe8       0xac /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800afe8                __lshift
+ .text.__mcmp   0x000000000800b094       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800b094                __mcmp
+ .text.__mdiff  0x000000000800b0cc       0xec /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800b0cc                __mdiff
+ .text.__d2b    0x000000000800b1b8       0xc4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800b1b8                __d2b
+ .text._sbrk_r  0x000000000800b27c       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
+                0x000000000800b27c                _sbrk_r
+ .text.__sread  0x000000000800b2a0       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800b2a0                __sread
  .text.__swrite
-                0x000000000800b334       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800b334                __swrite
- .text.__sseek  0x000000000800b370       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800b370                __sseek
+                0x000000000800b2c4       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800b2c4                __swrite
+ .text.__sseek  0x000000000800b300       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800b300                __sseek
  .text.__sclose
-                0x000000000800b390        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
-                0x000000000800b390                __sclose
+                0x000000000800b320        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+                0x000000000800b320                __sclose
  .text.__ssprint_r
-                0x000000000800b398       0xf4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
-                0x000000000800b398                __ssprint_r
+                0x000000000800b328       0xf4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
+                0x000000000800b328                __ssprint_r
  .text.__sprint_r.part.0
-                0x000000000800b48c       0x78 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000000800b41c       0x78 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x000000000800b504       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
-                0x000000000800b504                __sprint_r
+                0x000000000800b494       0x14 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+                0x000000000800b494                __sprint_r
  .text._write_r
-                0x000000000800b518       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
-                0x000000000800b518                _write_r
+                0x000000000800b4a8       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
+                0x000000000800b4a8                _write_r
  .text.__register_exitproc
-                0x000000000800b544       0xc0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
-                0x000000000800b544                __register_exitproc
+                0x000000000800b4d4       0xc0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+                0x000000000800b4d4                __register_exitproc
  .text._calloc_r
-                0x000000000800b604       0x68 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
-                0x000000000800b604                _calloc_r
+                0x000000000800b594       0x68 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
+                0x000000000800b594                _calloc_r
  .text._close_r
-                0x000000000800b66c       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
-                0x000000000800b66c                _close_r
+                0x000000000800b5fc       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
+                0x000000000800b5fc                _close_r
  .text._fclose_r
-                0x000000000800b690       0xd0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
-                0x000000000800b690                _fclose_r
+                0x000000000800b620       0xd0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
+                0x000000000800b620                _fclose_r
  .text.__fputwc
-                0x000000000800b760       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000000800b760                __fputwc
+                0x000000000800b6f0       0xa0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000000800b6f0                __fputwc
  .text._fputwc_r
-                0x000000000800b800       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
-                0x000000000800b800                _fputwc_r
+                0x000000000800b790       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+                0x000000000800b790                _fputwc_r
  .text._fstat_r
-                0x000000000800b864       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
-                0x000000000800b864                _fstat_r
+                0x000000000800b7f4       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
+                0x000000000800b7f4                _fstat_r
  .text.__sfvwrite_r
-                0x000000000800b88c      0x2fc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
-                0x000000000800b88c                __sfvwrite_r
+                0x000000000800b81c      0x2fc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
+                0x000000000800b81c                __sfvwrite_r
  .text._isatty_r
-                0x000000000800bb88       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
-                0x000000000800bb88                _isatty_r
+                0x000000000800bb18       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
+                0x000000000800bb18                _isatty_r
  .text._lseek_r
-                0x000000000800bbac       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
-                0x000000000800bbac                _lseek_r
- .text.memmove  0x000000000800bbd8       0xc8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
-                0x000000000800bbd8                memmove
- .text._read_r  0x000000000800bca0       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
-                0x000000000800bca0                _read_r
+                0x000000000800bb3c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
+                0x000000000800bb3c                _lseek_r
+ .text.memmove  0x000000000800bb68       0xc8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
+                0x000000000800bb68                memmove
+ .text._read_r  0x000000000800bc30       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
+                0x000000000800bc30                _read_r
  .text._realloc_r
-                0x000000000800bccc      0x35c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
-                0x000000000800bccc                _realloc_r
+                0x000000000800bc5c      0x35c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
+                0x000000000800bc5c                _realloc_r
  .text.__swbuf_r
-                0x000000000800c028       0xb0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
-                0x000000000800c028                __swbuf_r
+                0x000000000800bfb8       0xb0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
+                0x000000000800bfb8                __swbuf_r
  .text._wcrtomb_r
-                0x000000000800c0d8       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
-                0x000000000800c0d8                _wcrtomb_r
+                0x000000000800c068       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
+                0x000000000800c068                _wcrtomb_r
  .text.findslot
-                0x000000000800c128       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c0b8       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
  .text.checkerror.part.0
-                0x000000000800c160       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
- .text._read    0x000000000800c17c       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c17c                _read
+                0x000000000800c0f0       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+ .text._read    0x000000000800c10c       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c10c                _read
  .text._swilseek
-                0x000000000800c1cc       0x9c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c1cc                _swilseek
- .text._lseek   0x000000000800c268        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c268                _lseek
- .text._write   0x000000000800c26c       0x74 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c26c                _write
- .text._close   0x000000000800c2e0       0x6c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c2e0                _close
- .text._sbrk    0x000000000800c34c       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c34c                _sbrk
+                0x000000000800c15c       0x9c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c15c                _swilseek
+ .text._lseek   0x000000000800c1f8        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c1f8                _lseek
+ .text._write   0x000000000800c1fc       0x74 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c1fc                _write
+ .text._close   0x000000000800c270       0x6c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c270                _close
+ .text._sbrk    0x000000000800c2dc       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c2dc                _sbrk
  .text._swistat
-                0x000000000800c398       0x48 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c398                _swistat
- .text._fstat   0x000000000800c3e0       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c3e0                _fstat
- .text._isatty  0x000000000800c3fc       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
-                0x000000000800c3fc                _isatty
+                0x000000000800c328       0x48 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c328                _swistat
+ .text._fstat   0x000000000800c370       0x1c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c370                _fstat
+ .text._isatty  0x000000000800c38c       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+                0x000000000800c38c                _isatty
  *(.glue_7)
- .glue_7        0x000000000800c438        0x0 linker stubs
+ .glue_7        0x000000000800c3c8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800c438        0x0 linker stubs
+ .glue_7t       0x000000000800c3c8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800c438        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x000000000800c3c8        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x000000000800c438        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000000000800c438                _init
- .init          0x000000000800c43c        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x000000000800c3c8        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000000000800c3c8                _init
+ .init          0x000000000800c3cc        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x000000000800c444        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000000000800c444                _fini
- .fini          0x000000000800c448        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x000000000800c450                . = ALIGN (0x4)
-                0x000000000800c450                _etext = .
+ .fini          0x000000000800c3d4        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000000000800c3d4                _fini
+ .fini          0x000000000800c3d8        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x000000000800c3e0                . = ALIGN (0x4)
+                0x000000000800c3e0                _etext = .
 
-.vfp11_veneer   0x000000000800c450        0x0
- .vfp11_veneer  0x000000000800c450        0x0 linker stubs
+.vfp11_veneer   0x000000000800c3e0        0x0
+ .vfp11_veneer  0x000000000800c3e0        0x0 linker stubs
 
-.v4_bx          0x000000000800c450        0x0
- .v4_bx         0x000000000800c450        0x0 linker stubs
+.v4_bx          0x000000000800c3e0        0x0
+ .v4_bx         0x000000000800c3e0        0x0 linker stubs
 
-.iplt           0x000000000800c450        0x0
- .iplt          0x000000000800c450        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x000000000800c3e0        0x0
+ .iplt          0x000000000800c3e0        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x000000000800c450      0xbb4
-                0x000000000800c450                . = ALIGN (0x4)
+.rodata         0x000000000800c3e0      0xb64
+                0x000000000800c3e0                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000800c450      0x60e Src/lcd5110.o
-                0x000000000800ca50                lcd5110_def_scr
- *fill*         0x000000000800ca5e        0x2 
- .rodata        0x000000000800ca60       0x18 Src/system_stm32f4xx.o
-                0x000000000800ca60                AHBPrescTable
-                0x000000000800ca70                APBPrescTable
+ .rodata        0x000000000800c3e0      0x60e Src/lcd5110.o
+                0x000000000800c9e0                lcd5110_def_scr
+ *fill*         0x000000000800c9ee        0x2 
+ .rodata        0x000000000800c9f0       0x18 Src/system_stm32f4xx.o
+                0x000000000800c9f0                AHBPrescTable
+                0x000000000800ca00                APBPrescTable
  *(.rodata*)
  .rodata.str1.4
-                0x000000000800ca78       0x3b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- *fill*         0x000000000800cab3        0x1 
+                0x000000000800ca08       0x3b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ *fill*         0x000000000800ca43        0x1 
  .rodata.str1.4
-                0x000000000800cab4       0x39 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- *fill*         0x000000000800caed        0x3 
+                0x000000000800ca44       0x39 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ *fill*         0x000000000800ca7d        0x3 
  .rodata.str1.4
-                0x000000000800caf0       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
+                0x000000000800ca80       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
  .rodata.str1.4
-                0x000000000800cb28       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
+                0x000000000800cab8       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
  .rodata.str1.4
-                0x000000000800cb60       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
+                0x000000000800caf0       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
  .rodata.str1.4
-                0x000000000800cb98       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+                0x000000000800cb28       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .rodata.str1.4
-                0x000000000800cbd0       0x3b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- *fill*         0x000000000800cc0b        0x1 
+                0x000000000800cb60       0x3b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ *fill*         0x000000000800cb9b        0x1 
  .rodata.str1.4
-                0x000000000800cc0c       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+                0x000000000800cb9c       0x38 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
  .rodata.str1.4
-                0x000000000800cc44        0xd Src/i2c.o
- *fill*         0x000000000800cc51        0x3 
+                0x000000000800cbd4        0xd Src/i2c.o
+ *fill*         0x000000000800cbe1        0x3 
  .rodata.str1.4
-                0x000000000800cc54        0xd Src/i2s.o
- *fill*         0x000000000800cc61        0x3 
+                0x000000000800cbe4        0xd Src/i2s.o
+ *fill*         0x000000000800cbf1        0x3 
  .rodata.str1.4
-                0x000000000800cc64       0xc9 Src/main.o
- *fill*         0x000000000800cd2d        0x3 
+                0x000000000800cbf4       0x78 Src/main.o
+                                         0x88 (size before relaxing)
  .rodata.str1.4
-                0x000000000800cd30        0xd Src/spi.o
- *fill*         0x000000000800cd3d        0x3 
+                0x000000000800cc6c        0xd Src/spi.o
+ *fill*         0x000000000800cc79        0x3 
  .rodata.str1.4
-                0x000000000800cd40       0x11 Src/usb_otg.o
- *fill*         0x000000000800cd51        0x3 
+                0x000000000800cc7c       0x11 Src/usb_otg.o
+ *fill*         0x000000000800cc8d        0x3 
  .rodata.sqrt.str1.4
-                0x000000000800cd54        0x5 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
- *fill*         0x000000000800cd59        0x3 
+                0x000000000800cc90        0x5 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
+ *fill*         0x000000000800cc95        0x3 
  .rodata._global_impure_ptr
-                0x000000000800cd5c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
-                0x000000000800cd5c                _global_impure_ptr
+                0x000000000800cc98        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-impure.o)
+                0x000000000800cc98                _global_impure_ptr
  .rodata._setlocale_r.str1.4
-                0x000000000800cd60        0xa /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+                0x000000000800cc9c        0xa /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
                                           0xd (size before relaxing)
- *fill*         0x000000000800cd6a        0x2 
+ *fill*         0x000000000800cca6        0x2 
  .rodata.str1.4
-                0x000000000800cd6c        0x2 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
- *fill*         0x000000000800cd6e        0x2 
+                0x000000000800cca8        0x2 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+ *fill*         0x000000000800ccaa        0x2 
  .rodata._svfprintf_r.str1.4
-                0x000000000800cd70       0x42 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
- *fill*         0x000000000800cdb2        0x2 
+                0x000000000800ccac       0x42 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+ *fill*         0x000000000800ccee        0x2 
  .rodata.blanks.8551
-                0x000000000800cdb4       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x000000000800ccf0       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
  .rodata.zeroes.8552
-                0x000000000800cdc4       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+                0x000000000800cd00       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
  .rodata._vfprintf_r.str1.4
-                0x000000000800cdd4       0x42 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800cd10       0x42 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata.blanks.8566
-                0x000000000800cdd4       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800cd10       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata.zeroes.8567
-                0x000000000800cde4       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+                0x000000000800cd20       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
  .rodata._ctype_
-                0x000000000800cdf4      0x101 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
-                0x000000000800cdf4                _ctype_
- *fill*         0x000000000800cef5        0x3 
+                0x000000000800cd30      0x101 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-ctype_.o)
+                0x000000000800cd30                _ctype_
+ *fill*         0x000000000800ce31        0x3 
  .rodata._dtoa_r.str1.4
-                0x000000000800cef8       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+                0x000000000800ce34       0x10 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
                                          0x12 (size before relaxing)
+ *fill*         0x000000000800ce44        0x4 
  .rodata.__mprec_bigtens
-                0x000000000800cf08       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800cf08                __mprec_bigtens
+                0x000000000800ce48       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ce48                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000000800cf30       0xc8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800cf30                __mprec_tens
+                0x000000000800ce70       0xc8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800ce70                __mprec_tens
  .rodata.p05.7367
-                0x000000000800cff8        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
-                0x000000000800d004                . = ALIGN (0x4)
+                0x000000000800cf38        0xc /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+                0x000000000800cf44                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800d004        0x8
-                0x000000000800d004                __exidx_start = .
+.ARM            0x000000000800cf44        0x8
+                0x000000000800cf44                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x000000000800d004        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
-                0x000000000800d00c                __exidx_end = .
+ .ARM.exidx     0x000000000800cf44        0x8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+                0x000000000800cf4c                __exidx_end = .
 
-.rel.dyn        0x000000000800d00c        0x0
- .rel.iplt      0x000000000800d00c        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x000000000800cf4c        0x0
+ .rel.iplt      0x000000000800cf4c        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.preinit_array  0x000000000800d00c        0x0
-                0x000000000800d00c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x000000000800cf4c        0x0
+                0x000000000800cf4c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800d00c                PROVIDE (__preinit_array_end, .)
+                0x000000000800cf4c                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000000000800d00c        0x8
-                0x000000000800d00c                PROVIDE (__init_array_start, .)
+.init_array     0x000000000800cf4c        0x8
+                0x000000000800cf4c                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x000000000800d00c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+                0x000000000800cf4c        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x000000000800d010        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x000000000800d014                PROVIDE (__init_array_end, .)
+ .init_array    0x000000000800cf50        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x000000000800cf54                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000000000800d014        0x4
-                0x000000000800d014                PROVIDE (__fini_array_start, .)
+.fini_array     0x000000000800cf54        0x4
+                0x000000000800cf54                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800d014        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x000000000800d018                PROVIDE (__fini_array_end, .)
-                0x000000000800d018                _sidata = LOADADDR (.data)
+ .fini_array    0x000000000800cf54        0x4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x000000000800cf58                PROVIDE (__fini_array_end, .)
+                0x000000000800cf58                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0xa44 load address 0x000000000800d018
+.data           0x0000000020000000      0xa44 load address 0x000000000800cf58
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -7488,11 +7495,11 @@ LOAD /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none
                 0x0000000020000a44                . = ALIGN (0x4)
                 0x0000000020000a44                _edata = .
 
-.igot.plt       0x0000000020000a44        0x0 load address 0x000000000800da5c
+.igot.plt       0x0000000020000a44        0x0 load address 0x000000000800d99c
  .igot.plt      0x0000000020000a44        0x0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x0000000020000a44                . = ALIGN (0x4)
 
-.bss            0x0000000020000a44      0x824 load address 0x000000000800da5c
+.bss            0x0000000020000a44      0x824 load address 0x000000000800d99c
                 0x0000000020000a44                _sbss = .
                 0x0000000020000a44                __bss_start__ = _sbss
  *(.bss)
@@ -7550,7 +7557,7 @@ LOAD /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none
                 0x0000000020001268                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020001268      0x600 load address 0x000000000800da5c
+                0x0000000020001268      0x600 load address 0x000000000800d99c
                 0x0000000020001268                . = ALIGN (0x8)
                 0x0000000020001268                PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
@@ -7760,7 +7767,7 @@ LOAD /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none
                 0x00000000000012c5       0x22 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(Accelero_trial_1.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x2756c
+.debug_info     0x0000000000000000    0x273dc
  .debug_info    0x0000000000000000     0x1193 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_info    0x0000000000001193     0x195a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_info    0x0000000000002aed     0x1127 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -7780,18 +7787,18 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_info    0x0000000000018316     0x1395 Src/lcd5110_hal.o
  .debug_info    0x00000000000196ab     0x1a2e Src/lcd5110_ll.o
  .debug_info    0x000000000001b0d9      0xb0d Src/lsm303dlhc.o
- .debug_info    0x000000000001bbe6     0x2c28 Src/main.o
- .debug_info    0x000000000001e80e     0x130d Src/spi.o
- .debug_info    0x000000000001fb1b     0x22e1 Src/stm32f411e_discovery.o
- .debug_info    0x0000000000021dfc      0xc4d Src/stm32f411e_discovery_accelerometer.o
- .debug_info    0x0000000000022a49      0xcf0 Src/stm32f411e_discovery_gyroscope.o
- .debug_info    0x0000000000023739      0xdff Src/stm32f4xx_hal_msp.o
- .debug_info    0x0000000000024538      0xebc Src/stm32f4xx_it.o
- .debug_info    0x00000000000253f4      0xd53 Src/system_stm32f4xx.o
- .debug_info    0x0000000000026147     0x1403 Src/usb_otg.o
- .debug_info    0x000000000002754a       0x22 startup/startup_stm32f411xe.o
+ .debug_info    0x000000000001bbe6     0x2a98 Src/main.o
+ .debug_info    0x000000000001e67e     0x130d Src/spi.o
+ .debug_info    0x000000000001f98b     0x22e1 Src/stm32f411e_discovery.o
+ .debug_info    0x0000000000021c6c      0xc4d Src/stm32f411e_discovery_accelerometer.o
+ .debug_info    0x00000000000228b9      0xcf0 Src/stm32f411e_discovery_gyroscope.o
+ .debug_info    0x00000000000235a9      0xdff Src/stm32f4xx_hal_msp.o
+ .debug_info    0x00000000000243a8      0xebc Src/stm32f4xx_it.o
+ .debug_info    0x0000000000025264      0xd53 Src/system_stm32f4xx.o
+ .debug_info    0x0000000000025fb7     0x1403 Src/usb_otg.o
+ .debug_info    0x00000000000273ba       0x22 startup/startup_stm32f411xe.o
 
-.debug_abbrev   0x0000000000000000     0x4dfc
+.debug_abbrev   0x0000000000000000     0x4e25
  .debug_abbrev  0x0000000000000000      0x2e5 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_abbrev  0x00000000000002e5      0x3f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_abbrev  0x00000000000006d6      0x2de Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -7811,18 +7818,18 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_abbrev  0x0000000000002f10      0x2a1 Src/lcd5110_hal.o
  .debug_abbrev  0x00000000000031b1      0x372 Src/lcd5110_ll.o
  .debug_abbrev  0x0000000000003523      0x1bc Src/lsm303dlhc.o
- .debug_abbrev  0x00000000000036df      0x357 Src/main.o
- .debug_abbrev  0x0000000000003a36      0x258 Src/spi.o
- .debug_abbrev  0x0000000000003c8e      0x355 Src/stm32f411e_discovery.o
- .debug_abbrev  0x0000000000003fe3      0x271 Src/stm32f411e_discovery_accelerometer.o
- .debug_abbrev  0x0000000000004254      0x2a7 Src/stm32f411e_discovery_gyroscope.o
- .debug_abbrev  0x00000000000044fb      0x234 Src/stm32f4xx_hal_msp.o
- .debug_abbrev  0x000000000000472f      0x23b Src/stm32f4xx_it.o
- .debug_abbrev  0x000000000000496a      0x205 Src/system_stm32f4xx.o
- .debug_abbrev  0x0000000000004b6f      0x27b Src/usb_otg.o
- .debug_abbrev  0x0000000000004dea       0x12 startup/startup_stm32f411xe.o
+ .debug_abbrev  0x00000000000036df      0x380 Src/main.o
+ .debug_abbrev  0x0000000000003a5f      0x258 Src/spi.o
+ .debug_abbrev  0x0000000000003cb7      0x355 Src/stm32f411e_discovery.o
+ .debug_abbrev  0x000000000000400c      0x271 Src/stm32f411e_discovery_accelerometer.o
+ .debug_abbrev  0x000000000000427d      0x2a7 Src/stm32f411e_discovery_gyroscope.o
+ .debug_abbrev  0x0000000000004524      0x234 Src/stm32f4xx_hal_msp.o
+ .debug_abbrev  0x0000000000004758      0x23b Src/stm32f4xx_it.o
+ .debug_abbrev  0x0000000000004993      0x205 Src/system_stm32f4xx.o
+ .debug_abbrev  0x0000000000004b98      0x27b Src/usb_otg.o
+ .debug_abbrev  0x0000000000004e13       0x12 startup/startup_stm32f411xe.o
 
-.debug_loc      0x0000000000000000     0xc477
+.debug_loc      0x0000000000000000     0xc447
  .debug_loc     0x0000000000000000       0xee Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_loc     0x00000000000000ee      0x75c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_loc     0x000000000000084a      0x58e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -7841,15 +7848,15 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_loc     0x000000000000a529      0x4cd Src/lcd5110_hal.o
  .debug_loc     0x000000000000a9f6      0x6a2 Src/lcd5110_ll.o
  .debug_loc     0x000000000000b098      0x5f3 Src/lsm303dlhc.o
- .debug_loc     0x000000000000b68b      0x472 Src/main.o
- .debug_loc     0x000000000000bafd       0xa6 Src/spi.o
- .debug_loc     0x000000000000bba3      0x513 Src/stm32f411e_discovery.o
- .debug_loc     0x000000000000c0b6       0xe0 Src/stm32f411e_discovery_accelerometer.o
- .debug_loc     0x000000000000c196      0x148 Src/stm32f411e_discovery_gyroscope.o
- .debug_loc     0x000000000000c2de      0x13e Src/system_stm32f4xx.o
- .debug_loc     0x000000000000c41c       0x5b Src/usb_otg.o
+ .debug_loc     0x000000000000b68b      0x442 Src/main.o
+ .debug_loc     0x000000000000bacd       0xa6 Src/spi.o
+ .debug_loc     0x000000000000bb73      0x513 Src/stm32f411e_discovery.o
+ .debug_loc     0x000000000000c086       0xe0 Src/stm32f411e_discovery_accelerometer.o
+ .debug_loc     0x000000000000c166      0x148 Src/stm32f411e_discovery_gyroscope.o
+ .debug_loc     0x000000000000c2ae      0x13e Src/system_stm32f4xx.o
+ .debug_loc     0x000000000000c3ec       0x5b Src/usb_otg.o
 
-.debug_aranges  0x0000000000000000     0x1100
+.debug_aranges  0x0000000000000000     0x1110
  .debug_aranges
                 0x0000000000000000       0xe0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_aranges
@@ -7889,27 +7896,27 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000d50       0xb0 Src/lsm303dlhc.o
  .debug_aranges
-                0x0000000000000e00       0x48 Src/main.o
+                0x0000000000000e00       0x58 Src/main.o
  .debug_aranges
-                0x0000000000000e48       0x38 Src/spi.o
+                0x0000000000000e58       0x38 Src/spi.o
  .debug_aranges
-                0x0000000000000e80       0xf0 Src/stm32f411e_discovery.o
+                0x0000000000000e90       0xf0 Src/stm32f411e_discovery.o
  .debug_aranges
-                0x0000000000000f70       0x38 Src/stm32f411e_discovery_accelerometer.o
+                0x0000000000000f80       0x38 Src/stm32f411e_discovery_accelerometer.o
  .debug_aranges
-                0x0000000000000fa8       0x50 Src/stm32f411e_discovery_gyroscope.o
+                0x0000000000000fb8       0x50 Src/stm32f411e_discovery_gyroscope.o
  .debug_aranges
-                0x0000000000000ff8       0x20 Src/stm32f4xx_hal_msp.o
+                0x0000000000001008       0x20 Src/stm32f4xx_hal_msp.o
  .debug_aranges
-                0x0000000000001018       0x68 Src/stm32f4xx_it.o
+                0x0000000000001028       0x68 Src/stm32f4xx_it.o
  .debug_aranges
-                0x0000000000001080       0x28 Src/system_stm32f4xx.o
+                0x0000000000001090       0x28 Src/system_stm32f4xx.o
  .debug_aranges
-                0x00000000000010a8       0x30 Src/usb_otg.o
+                0x00000000000010b8       0x30 Src/usb_otg.o
  .debug_aranges
-                0x00000000000010d8       0x28 startup/startup_stm32f411xe.o
+                0x00000000000010e8       0x28 startup/startup_stm32f411xe.o
 
-.debug_ranges   0x0000000000000000     0x1070
+.debug_ranges   0x0000000000000000     0x1098
  .debug_ranges  0x0000000000000000       0xd0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_ranges  0x00000000000000d0       0xf8 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_ranges  0x00000000000001c8       0x48 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -7929,16 +7936,16 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_ranges  0x0000000000000c80       0x90 Src/lcd5110_hal.o
  .debug_ranges  0x0000000000000d10       0x58 Src/lcd5110_ll.o
  .debug_ranges  0x0000000000000d68       0xa0 Src/lsm303dlhc.o
- .debug_ranges  0x0000000000000e08       0x38 Src/main.o
- .debug_ranges  0x0000000000000e40       0x28 Src/spi.o
- .debug_ranges  0x0000000000000e68       0xe0 Src/stm32f411e_discovery.o
- .debug_ranges  0x0000000000000f48       0x28 Src/stm32f411e_discovery_accelerometer.o
- .debug_ranges  0x0000000000000f70       0x40 Src/stm32f411e_discovery_gyroscope.o
- .debug_ranges  0x0000000000000fb0       0x10 Src/stm32f4xx_hal_msp.o
- .debug_ranges  0x0000000000000fc0       0x58 Src/stm32f4xx_it.o
- .debug_ranges  0x0000000000001018       0x18 Src/system_stm32f4xx.o
- .debug_ranges  0x0000000000001030       0x20 Src/usb_otg.o
- .debug_ranges  0x0000000000001050       0x20 startup/startup_stm32f411xe.o
+ .debug_ranges  0x0000000000000e08       0x60 Src/main.o
+ .debug_ranges  0x0000000000000e68       0x28 Src/spi.o
+ .debug_ranges  0x0000000000000e90       0xe0 Src/stm32f411e_discovery.o
+ .debug_ranges  0x0000000000000f70       0x28 Src/stm32f411e_discovery_accelerometer.o
+ .debug_ranges  0x0000000000000f98       0x40 Src/stm32f411e_discovery_gyroscope.o
+ .debug_ranges  0x0000000000000fd8       0x10 Src/stm32f4xx_hal_msp.o
+ .debug_ranges  0x0000000000000fe8       0x58 Src/stm32f4xx_it.o
+ .debug_ranges  0x0000000000001040       0x18 Src/system_stm32f4xx.o
+ .debug_ranges  0x0000000000001058       0x20 Src/usb_otg.o
+ .debug_ranges  0x0000000000001078       0x20 startup/startup_stm32f411xe.o
 
 .debug_macro    0x0000000000000000    0x1adba
  .debug_macro   0x0000000000000000      0x3bd Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
@@ -8049,7 +8056,7 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_macro   0x000000000001a6e1      0x368 Src/system_stm32f4xx.o
  .debug_macro   0x000000000001aa49      0x371 Src/usb_otg.o
 
-.debug_line     0x0000000000000000    0x1301c
+.debug_line     0x0000000000000000    0x13008
  .debug_line    0x0000000000000000      0xa28 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_line    0x0000000000000a28      0xb07 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_line    0x000000000000152f      0xaa4 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -8069,75 +8076,75 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_line    0x000000000000c59d      0x9b0 Src/lcd5110_hal.o
  .debug_line    0x000000000000cf4d      0x98b Src/lcd5110_ll.o
  .debug_line    0x000000000000d8d8      0x502 Src/lsm303dlhc.o
- .debug_line    0x000000000000ddda      0xa5f Src/main.o
- .debug_line    0x000000000000e839      0x8ae Src/spi.o
- .debug_line    0x000000000000f0e7      0xadf Src/stm32f411e_discovery.o
- .debug_line    0x000000000000fbc6      0x8e8 Src/stm32f411e_discovery_accelerometer.o
- .debug_line    0x00000000000104ae      0x916 Src/stm32f411e_discovery_gyroscope.o
- .debug_line    0x0000000000010dc4      0x833 Src/stm32f4xx_hal_msp.o
- .debug_line    0x00000000000115f7      0x8ce Src/stm32f4xx_it.o
- .debug_line    0x0000000000011ec5      0x85d Src/system_stm32f4xx.o
- .debug_line    0x0000000000012722      0x87b Src/usb_otg.o
- .debug_line    0x0000000000012f9d       0x7f startup/startup_stm32f411xe.o
+ .debug_line    0x000000000000ddda      0xa4b Src/main.o
+ .debug_line    0x000000000000e825      0x8ae Src/spi.o
+ .debug_line    0x000000000000f0d3      0xadf Src/stm32f411e_discovery.o
+ .debug_line    0x000000000000fbb2      0x8e8 Src/stm32f411e_discovery_accelerometer.o
+ .debug_line    0x000000000001049a      0x916 Src/stm32f411e_discovery_gyroscope.o
+ .debug_line    0x0000000000010db0      0x833 Src/stm32f4xx_hal_msp.o
+ .debug_line    0x00000000000115e3      0x8ce Src/stm32f4xx_it.o
+ .debug_line    0x0000000000011eb1      0x85d Src/system_stm32f4xx.o
+ .debug_line    0x000000000001270e      0x87b Src/usb_otg.o
+ .debug_line    0x0000000000012f89       0x7f startup/startup_stm32f411xe.o
 
-.debug_str      0x0000000000000000    0x8b541
- .debug_str     0x0000000000000000    0x82265 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+.debug_str      0x0000000000000000    0x8b55a
+ .debug_str     0x0000000000000000    0x8225f Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                                       0x82699 (size before relaxing)
- .debug_str     0x0000000000082265      0x3b9 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_str     0x000000000008225f      0x3b9 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
                                       0x823dd (size before relaxing)
- .debug_str     0x000000000008261e      0x281 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_str     0x0000000000082618      0x281 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
                                       0x81ec6 (size before relaxing)
- .debug_str     0x000000000008289f      0x883 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
+ .debug_str     0x0000000000082899      0x883 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
                                       0x823bb (size before relaxing)
- .debug_str     0x0000000000083122      0xed3 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
+ .debug_str     0x000000000008311c      0xed3 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
                                       0x82abf (size before relaxing)
- .debug_str     0x0000000000083ff5      0x429 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
+ .debug_str     0x0000000000083fef      0x429 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
                                       0x82227 (size before relaxing)
- .debug_str     0x000000000008441e      0x1d1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o
+ .debug_str     0x0000000000084418      0x1d1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o
                                       0x8214d (size before relaxing)
- .debug_str     0x00000000000845ef      0x364 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_str     0x00000000000845e9      0x364 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
                                       0x82090 (size before relaxing)
- .debug_str     0x0000000000084953      0x18f Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_str     0x000000000008494d      0x18f Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
                                       0x81e0b (size before relaxing)
- .debug_str     0x0000000000084ae2      0x61b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+ .debug_str     0x0000000000084adc      0x61b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
                                       0x8249a (size before relaxing)
- .debug_str     0x00000000000850fd      0x45d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o
+ .debug_str     0x00000000000850f7      0x45d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o
                                       0x824a6 (size before relaxing)
- .debug_str     0x000000000008555a       0x25 Src/gpio.o
+ .debug_str     0x0000000000085554       0x25 Src/gpio.o
                                       0x81c9e (size before relaxing)
- .debug_str     0x000000000008557f       0x42 Src/i2c.o
+ .debug_str     0x0000000000085579       0x42 Src/i2c.o
                                       0x821c7 (size before relaxing)
- .debug_str     0x00000000000855c1       0x46 Src/i2s.o
+ .debug_str     0x00000000000855bb       0x46 Src/i2s.o
                                       0x82122 (size before relaxing)
- .debug_str     0x0000000000085607      0xc01 Src/l3gd20.o
+ .debug_str     0x0000000000085601      0xc01 Src/l3gd20.o
                                        0x4889 (size before relaxing)
- .debug_str     0x0000000000086208     0x190d Src/lcd5110.o
+ .debug_str     0x0000000000086202     0x190d Src/lcd5110.o
                                       0x8396a (size before relaxing)
- .debug_str     0x0000000000087b15       0xa6 Src/lcd5110_hal.o
+ .debug_str     0x0000000000087b0f       0xa6 Src/lcd5110_hal.o
                                       0x82145 (size before relaxing)
- .debug_str     0x0000000000087bbb      0x475 Src/lcd5110_ll.o
+ .debug_str     0x0000000000087bb5      0x475 Src/lcd5110_ll.o
                                       0x825a8 (size before relaxing)
- .debug_str     0x0000000000088030     0x1a3c Src/lsm303dlhc.o
+ .debug_str     0x000000000008802a     0x1a3c Src/lsm303dlhc.o
                                        0x5726 (size before relaxing)
- .debug_str     0x0000000000089a6c     0x11aa Src/main.o
-                                      0x86d83 (size before relaxing)
- .debug_str     0x000000000008ac16       0x17 Src/spi.o
+ .debug_str     0x0000000000089a66     0x11c9 Src/main.o
+                                      0x86da2 (size before relaxing)
+ .debug_str     0x000000000008ac2f       0x17 Src/spi.o
                                       0x8211e (size before relaxing)
- .debug_str     0x000000000008ac2d      0x3f5 Src/stm32f411e_discovery.o
+ .debug_str     0x000000000008ac46      0x3f5 Src/stm32f411e_discovery.o
                                       0x83c22 (size before relaxing)
- .debug_str     0x000000000008b022      0x219 Src/stm32f411e_discovery_accelerometer.o
+ .debug_str     0x000000000008b03b      0x219 Src/stm32f411e_discovery_accelerometer.o
                                       0x844c5 (size before relaxing)
- .debug_str     0x000000000008b23b      0x17c Src/stm32f411e_discovery_gyroscope.o
+ .debug_str     0x000000000008b254      0x17c Src/stm32f411e_discovery_gyroscope.o
                                       0x837a7 (size before relaxing)
- .debug_str     0x000000000008b3b7       0x1b Src/stm32f4xx_hal_msp.o
+ .debug_str     0x000000000008b3d0       0x1b Src/stm32f4xx_hal_msp.o
                                       0x81fab (size before relaxing)
- .debug_str     0x000000000008b3d2       0xca Src/stm32f4xx_it.o
+ .debug_str     0x000000000008b3eb       0xca Src/stm32f4xx_it.o
                                       0x81fb3 (size before relaxing)
- .debug_str     0x000000000008b49c       0x5a Src/system_stm32f4xx.o
+ .debug_str     0x000000000008b4b5       0x5a Src/system_stm32f4xx.o
                                       0x81c74 (size before relaxing)
- .debug_str     0x000000000008b4f6       0x1b Src/usb_otg.o
+ .debug_str     0x000000000008b50f       0x1b Src/usb_otg.o
                                       0x824e1 (size before relaxing)
- .debug_str     0x000000000008b511       0x30 startup/startup_stm32f411xe.o
+ .debug_str     0x000000000008b52a       0x30 startup/startup_stm32f411xe.o
                                          0x59 (size before relaxing)
 
 .comment        0x0000000000000000       0x7e
@@ -8171,7 +8178,7 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .comment       0x000000000000007e       0x7f Src/system_stm32f4xx.o
  .comment       0x000000000000007e       0x7f Src/usb_otg.o
 
-.debug_frame    0x0000000000000000     0x49b4
+.debug_frame    0x0000000000000000     0x4a20
  .debug_frame   0x0000000000000000      0x1cc Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_frame   0x00000000000001cc      0x19c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_frame   0x0000000000000368       0xfc Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
@@ -8191,68 +8198,68 @@ OUTPUT(Accelero_trial_1.elf elf32-littlearm)
  .debug_frame   0x00000000000025d0       0xf8 Src/lcd5110_hal.o
  .debug_frame   0x00000000000026c8      0x158 Src/lcd5110_ll.o
  .debug_frame   0x0000000000002820      0x1e8 Src/lsm303dlhc.o
- .debug_frame   0x0000000000002a08       0xdc Src/main.o
- .debug_frame   0x0000000000002ae4       0x80 Src/spi.o
- .debug_frame   0x0000000000002b64      0x2f4 Src/stm32f411e_discovery.o
- .debug_frame   0x0000000000002e58       0x74 Src/stm32f411e_discovery_accelerometer.o
- .debug_frame   0x0000000000002ecc       0xb8 Src/stm32f411e_discovery_gyroscope.o
- .debug_frame   0x0000000000002f84       0x30 Src/stm32f4xx_hal_msp.o
- .debug_frame   0x0000000000002fb4       0xc0 Src/stm32f4xx_it.o
- .debug_frame   0x0000000000003074       0x30 Src/system_stm32f4xx.o
- .debug_frame   0x00000000000030a4       0x60 Src/usb_otg.o
- .debug_frame   0x0000000000003104       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
- .debug_frame   0x0000000000003150       0x30 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-e_sqrt.o)
- .debug_frame   0x0000000000003180       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
- .debug_frame   0x00000000000031a0       0xac /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x000000000000324c       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x000000000000329c       0xc4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000000000003360       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000000000003380       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000000000033ac       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00000000000033e0       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
- .debug_frame   0x0000000000003400       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
- .debug_frame   0x000000000000342c       0x6c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
- .debug_frame   0x0000000000003498       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00000000000034e4       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
- .debug_frame   0x000000000000351c       0x74 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
- .debug_frame   0x0000000000003590       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
- .debug_frame   0x0000000000003610       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
- .debug_frame   0x0000000000003650       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
- .debug_frame   0x00000000000036e4       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
- .debug_frame   0x0000000000003720       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
- .debug_frame   0x000000000000374c       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000000000037a8       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
- .debug_frame   0x00000000000037c8       0x88 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
- .debug_frame   0x0000000000003850       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
- .debug_frame   0x00000000000038ac      0x148 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
- .debug_frame   0x00000000000039f4       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
- .debug_frame   0x0000000000003a28       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
- .debug_frame   0x0000000000003aa8       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
- .debug_frame   0x0000000000003afc       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
- .debug_frame   0x0000000000003b3c       0xb0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
- .debug_frame   0x0000000000003bec       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000003c50       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
- .debug_frame   0x0000000000003ca4       0x30 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
- .debug_frame   0x0000000000003cd4      0x25c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
- .debug_frame   0x0000000000003f30       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000003f5c       0x88 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
- .debug_frame   0x0000000000003fe4       0x78 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
- .debug_frame   0x000000000000405c       0xd8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
- .debug_frame   0x0000000000004134       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
- .debug_frame   0x0000000000004160       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
- .debug_frame   0x0000000000004194       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
- .debug_frame   0x00000000000041bc       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
- .debug_frame   0x00000000000041e8       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
- .debug_frame   0x0000000000004224       0x9c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
- .debug_frame   0x00000000000042c0       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
- .debug_frame   0x00000000000042ec       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
- .debug_frame   0x0000000000004350       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
- .debug_frame   0x000000000000437c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
- .debug_frame   0x00000000000043a8       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
- .debug_frame   0x00000000000043e8       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
- .debug_frame   0x0000000000004414       0x58 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
- .debug_frame   0x000000000000446c       0x68 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reent.o)
- .debug_frame   0x00000000000044d4       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
- .debug_frame   0x0000000000004514       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
- .debug_frame   0x0000000000004578       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x000000000000459c      0x418 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)
+ .debug_frame   0x0000000000002a08      0x148 Src/main.o
+ .debug_frame   0x0000000000002b50       0x80 Src/spi.o
+ .debug_frame   0x0000000000002bd0      0x2f4 Src/stm32f411e_discovery.o
+ .debug_frame   0x0000000000002ec4       0x74 Src/stm32f411e_discovery_accelerometer.o
+ .debug_frame   0x0000000000002f38       0xb8 Src/stm32f411e_discovery_gyroscope.o
+ .debug_frame   0x0000000000002ff0       0x30 Src/stm32f4xx_hal_msp.o
+ .debug_frame   0x0000000000003020       0xc0 Src/stm32f4xx_it.o
+ .debug_frame   0x00000000000030e0       0x30 Src/system_stm32f4xx.o
+ .debug_frame   0x0000000000003110       0x60 Src/usb_otg.o
+ .debug_frame   0x0000000000003170       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-w_sqrt.o)
+ .debug_frame   0x00000000000031bc       0x30 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00000000000031ec       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x000000000000320c       0xac /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000032b8       0x50 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000003308       0xc4 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000000033cc       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00000000000033ec       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000003418       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000000000344c       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-errno.o)
+ .debug_frame   0x000000000000346c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000003498       0x6c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-locale.o)
+ .debug_frame   0x0000000000003504       0x4c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x0000000000003550       0x38 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000003588       0x74 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-printf.o)
+ .debug_frame   0x00000000000035fc       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sprintf.o)
+ .debug_frame   0x000000000000367c       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfprintf.o)
+ .debug_frame   0x00000000000036bc       0x94 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfprintf.o)
+ .debug_frame   0x0000000000003750       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wctomb_r.o)
+ .debug_frame   0x000000000000378c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wsetup.o)
+ .debug_frame   0x00000000000037b8       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000003814       0x20 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000003834       0x88 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-dtoa.o)
+ .debug_frame   0x00000000000038bc       0x5c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000003918      0x148 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000003a60       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000003a94       0x80 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000003b14       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000003b68       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-localeconv.o)
+ .debug_frame   0x0000000000003ba8       0xb0 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lock.o)
+ .debug_frame   0x0000000000003c58       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000003cbc       0x54 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000000000003d10       0x30 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000003d40      0x25c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-mprec.o)
+ .debug_frame   0x0000000000003f9c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000003fc8       0x88 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000004050       0x78 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-svfiprintf.o)
+ .debug_frame   0x00000000000040c8       0xd8 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00000000000041a0       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-writer.o)
+ .debug_frame   0x00000000000041cc       0x34 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000004200       0x28 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-callocr.o)
+ .debug_frame   0x0000000000004228       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-closer.o)
+ .debug_frame   0x0000000000004254       0x3c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fclose.o)
+ .debug_frame   0x0000000000004290       0x9c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fputwc.o)
+ .debug_frame   0x000000000000432c       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000004358       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-fvwrite.o)
+ .debug_frame   0x00000000000043bc       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-isattyr.o)
+ .debug_frame   0x00000000000043e8       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000004414       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000004454       0x2c /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-readr.o)
+ .debug_frame   0x0000000000004480       0x58 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reallocr.o)
+ .debug_frame   0x00000000000044d8       0x68 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-reent.o)
+ .debug_frame   0x0000000000004540       0x40 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000004580       0x64 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00000000000045e4       0x24 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000000000004608      0x418 /home/arattel/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.16.0.201807130628/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/librdimon.a(rdimon-syscalls.o)

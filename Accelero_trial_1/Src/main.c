@@ -63,30 +63,56 @@ void SystemClock_Config(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-double get_result_accelero(int16_t* buffer);
-double get_result_gyro(float* buffer);
+double get_result_accelero(int16_t* buffer, double* xyz);
+double get_result_gyro(float* buffer, double* xyz);
+void new_data(void);
+void print_results(char* dev, double* xyz, double result, double max_res);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-double get_result_accelero(int16_t* buffer) {
+LCD5110_display lcd1;
+double get_result_accelero(int16_t* buffer, double* xyz) {
 	double numbers[3] = { (double) (buffer[0] / 16) / 1000.0,
 			(double) (buffer[1] / 16) / 1000.0, (double) (buffer[2] / 16)
 					/ 1000.0 };
 	double result = sqrt(
 			numbers[0] * numbers[0] + numbers[1] * numbers[1]
 					+ numbers[2] * numbers[2]);
+	for (int i = 0; i < 3; i++) {
+		xyz[i] = numbers[i];
+	}
 	return (result);
 }
-double get_result_gyro(float* buffer) {
+double get_result_gyro(float* buffer, double* xyz) {
 	double numbers[3] = { (double) (buffer[0] / 1000), (double) (buffer[1]
 			/ 1000), (double) (buffer[2]) / 1000.0 };
 	double result = sqrt(
 			numbers[0] * numbers[0] + numbers[1] * numbers[1]
 					+ numbers[2] * numbers[2]);
+	for (int i = 0; i < 3; i++) {
+		xyz[i] = numbers[i];
+	}
 	return (result);
 }
-LCD5110_display lcd1;
-
+void new_data(void) {
+	LCD5110_clear_scr(&lcd1);
+	LCD5110_set_cursor(0, 0, &lcd1);
+}
+void print_results(char* dev, double* xyz, double result, double max) {
+	char* xyz_dev[38];
+	sprintf(xyz_dev, "%s: %g,%g,%g \n", dev, xyz[0], xyz[1], xyz[2]);
+	LCD5110_print(xyz_dev, BLACK, &lcd1);
+	HAL_Delay(1500);
+	new_data();
+	char* acc_dev[11];
+	char* max_dev[11];
+	sprintf(acc_dev, "%s result: %g\n", dev, result);
+	LCD5110_print(acc_dev, BLACK, &lcd1);
+	sprintf(max_dev, "Max %s result: %g\n", dev, max);
+	LCD5110_print(max_dev, BLACK, &lcd1);
+	HAL_Delay(1500);
+	new_data();
+}
 /* USER CODE END 0 */
 
 /**
@@ -152,60 +178,28 @@ int main(void) {
 	float buffer_gyr[3];
 	BSP_ACCELERO_GetXYZ(buffer_acc);
 	BSP_GYRO_GetXYZ(buffer_gyr);
-	double max_result_acc = get_result_accelero(buffer_acc);
+	double acc_xyz[3];
+	double gyr_xyz[3];
+	double max_result_acc = get_result_accelero(buffer_acc, acc_xyz);
 	double cur_result_acc;
-	double max_result_gyr = get_result_gyro(buffer_gyr);
+	double max_result_gyr = get_result_gyro(buffer_gyr, gyr_xyz);
 	double cur_result_gyr;
+
 	while (1)
 
 	{
 		BSP_ACCELERO_GetXYZ(buffer_acc);
 		BSP_GYRO_GetXYZ(buffer_gyr);
-		cur_result_acc = get_result_accelero(buffer_acc);
+		cur_result_acc = get_result_accelero(buffer_acc, acc_xyz);
 		if (cur_result_acc > max_result_acc) {
 			max_result_acc = cur_result_acc;
 		}
-		cur_result_gyr = get_result_gyro(buffer_gyr);
+		cur_result_gyr = get_result_gyro(buffer_gyr, gyr_xyz);
 		if (cur_result_gyr > max_result_gyr) {
 			max_result_gyr = cur_result_gyr;
 		}
-		char* xyz_acc[38];
-		LCD5110_clear_scr(&lcd1);
-		LCD5110_set_cursor(0, 0, &lcd1);
-		sprintf(xyz_acc, "Acc: %g,%g,%g \n",
-				(double) (buffer_acc[0] / 16) / 1000.0,
-				(double) (buffer_acc[1] / 16) / 1000.0,
-				(double) (buffer_acc[2] / 16) / 1000.0);
-		LCD5110_print(xyz_acc, BLACK, &lcd1);
-		LCD5110_clear_scr(&lcd1);
-		LCD5110_set_cursor(0, 0, &lcd1);
-		HAL_Delay(1500);
-		char* acc_res[11];
-		char* max_res[11];
-		char* xyz_gyr[38];
-		sprintf(acc_res, "Accelero result: %g\n", cur_result_acc);
-		LCD5110_print(acc_res, BLACK, &lcd1);
-		sprintf(max_res, "Max accelero result: %g\n", max_result_acc);
-		LCD5110_print(max_res, BLACK, &lcd1);
-		HAL_Delay(1500);
-		LCD5110_clear_scr(&lcd1);
-		LCD5110_set_cursor(0, 0, &lcd1);
-		sprintf(xyz_gyr, "Gyr: %g %g %g \n", (double) (buffer_gyr[0] / 1000),
-				(double) (buffer_gyr[1] / 1000),
-				(double) (buffer_gyr[2]/ 1000.0));
-		LCD5110_print(xyz_gyr, BLACK, &lcd1);
-		LCD5110_clear_scr(&lcd1);
-		HAL_Delay(1500);
-		LCD5110_set_cursor(0, 0, &lcd1);
-		sprintf(acc_res, "Gyro result: %g\n", cur_result_gyr);
-		LCD5110_print(acc_res, BLACK, &lcd1);
-		sprintf(max_res, "Max gyro result: %g\n", max_result_gyr);
-		LCD5110_print(max_res, BLACK, &lcd1);
-		HAL_Delay(1500);
-		/*
-		 printf("Gyro result: %g\n", cur_result_gyr);
-		 printf("Max gyro result: %g\n", max_result_gyr);
-		 */
+		print_results("Acc", acc_xyz, cur_result_acc, max_result_acc);
+		print_results("Gyr", gyr_xyz, cur_result_gyr, max_result_gyr);
 		/* USER CODE END WHILE */
 	}
 	/* USER CODE BEGIN 3 */
