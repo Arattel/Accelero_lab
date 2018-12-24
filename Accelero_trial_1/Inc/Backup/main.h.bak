@@ -80,6 +80,12 @@
 #define SPI1_MOSI_GPIO_Port GPIOA
 #define CLK_IN_Pin GPIO_PIN_10
 #define CLK_IN_GPIO_Port GPIOB
+#define LCD1_RST_Pin GPIO_PIN_13
+#define LCD1_RST_GPIO_Port GPIOB
+#define LCD1_DC_Pin GPIO_PIN_14
+#define LCD1_DC_GPIO_Port GPIOB
+#define LCD1_CS_Pin GPIO_PIN_15
+#define LCD1_CS_GPIO_Port GPIOB
 #define LD4_Pin GPIO_PIN_12
 #define LD4_GPIO_Port GPIOD
 #define LD3_Pin GPIO_PIN_13

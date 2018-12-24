@@ -34,8 +34,8 @@ Src/stm32f411e_discovery_accelerometer.o: \
  /home/arattel/STM/Accelero_trial_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  /home/arattel/STM/Accelero_trial_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h \
  /home/arattel/STM/Accelero_trial_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
- /home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/lsm303dlhc.h \
- /home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/../Common/accelero.h
+ /home/arattel/STM/Accelero_trial_1/Inc/lsm303dlhc.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/accelero.h
 
 /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery_accelerometer.h:
 
@@ -105,6 +105,6 @@ Src/stm32f411e_discovery_accelerometer.o: \
 
 /home/arattel/STM/Accelero_trial_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h:
 
-/home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/lsm303dlhc.h:
+/home/arattel/STM/Accelero_trial_1/Inc/lsm303dlhc.h:
 
-/home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/../Common/accelero.h:
+/home/arattel/STM/Accelero_trial_1/Inc/accelero.h:

@@ -47,6 +47,9 @@
 
 /* USER CODE BEGIN Includes */
 #include "stm32f411e_discovery_accelerometer.h"
+#include <math.h>
+#include "stm32f411e_discovery_gyroscope.h"
+ #include "lcd5110.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -61,10 +64,26 @@ void SystemClock_Config(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-
+double get_result_accelero(void);
+double get_result_gyro(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+double get_result_accelero(void){
+	   int16_t buffer[3] = {0};
+	     BSP_ACCELERO_GetXYZ(buffer);
+	     double numbers[3] = {(double)(buffer[0]/16)/1000.0,  (double)(buffer[1]/16)/1000.0, (double)(buffer[2]/16)/1000.0};
+	     double result = sqrt(numbers[0] * numbers[0] + numbers[1] * numbers[1] + numbers[2] * numbers[2]);
+	     return(result);
+ }
+double get_result_gyro(void){
+	int16_t buffer[3] = {0};
+		     BSP_GYRO_GetXYZ(buffer);
+		     double numbers[3] = {(double)(buffer[0]/16)/1000.0,  (double)(buffer[1]/16)/1000.0, (double)(buffer[2]/16)/1000.0};
+		     double result = sqrt(numbers[0] * numbers[0] + numbers[1] * numbers[1] + numbers[2] * numbers[2]);
+		     return(result);
+}
+LCD5110_display lcd1;
 
 /* USER CODE END 0 */
 
@@ -103,24 +122,56 @@ int main(void)
   MX_I2S3_Init();
   MX_SPI1_Init();
   MX_USB_OTG_FS_HCD_Init();
+  MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
+  lcd1.hw_conf.spi_handle = &hspi5;
+     lcd1.hw_conf.spi_cs_pin =  LCD1_CS_Pin;
+     lcd1.hw_conf.spi_cs_port = LCD1_CS_GPIO_Port;
+     lcd1.hw_conf.rst_pin =  LCD1_RST_Pin;
+     lcd1.hw_conf.rst_port = LCD1_RST_GPIO_Port;
+     lcd1.hw_conf.dc_pin =  LCD1_DC_Pin;
+     lcd1.hw_conf.dc_port = LCD1_DC_GPIO_Port;
+     lcd1.def_scr = lcd5110_def_scr;
+     LCD5110_init(&lcd1.hw_conf, LCD5110_NORMAL_MODE, 0x40, 2, 3);
+     LCD5110_print("Ilmarinen calls you!\n", BLACK, &lcd1);
   if(BSP_ACCELERO_Init() != HAL_OK)
     {
       /* Initialization Error */
-   printf("Error initializing HAL.");
+   printf("Error initializing Accelero.");
       while(1){}
     }
+  if( BSP_GYRO_Init() != HAL_OK)
+     {
+       /* Initialization Error */
+    printf("Error initializing Gyro.");
+       while(1){}
+     }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+  double max_result_acc = get_result_accelero();
+  double cur_result_acc;
+  double max_result_gyr = get_result_gyro();
+  double cur_result_gyr;
+    while (1)
+    {
+    	cur_result_acc = get_result_accelero();
+    	if(cur_result_acc > max_result_acc){
+    		max_result_acc = cur_result_acc;
+    	}
+    	cur_result_gyr = get_result_gyro();
+    	 if(cur_result_gyr > max_result_gyr){
+    	    		max_result_gyr = cur_result_gyr;
+    	    	}
+    	 printf("Accelero result: %g\n", cur_result_acc);
+    	      printf("Max accelero result: %g\n", max_result_acc);
+     printf("Gyro result: %g\n", cur_result_gyr);
+     printf("Max gyro result: %g\n", max_result_gyr);
 
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-printf("H\n");
   }
   /* USER CODE END 3 */
 

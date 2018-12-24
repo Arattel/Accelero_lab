@@ -38,11 +38,16 @@ Src/main.o: ../Src/main.c /home/arattel/STM/Accelero_trial_1/Inc/main.h \
  /home/arattel/STM/Accelero_trial_1/Inc/gpio.h \
  /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery_accelerometer.h \
  /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery.h \
- /home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/lsm303dlhc.h \
- /home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/../Common/accelero.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/lsm303dlhc.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/accelero.h \
  /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery_gyroscope.h \
  /home/arattel/STM/Accelero_trial_1/Inc/l3gd20.h \
- /home/arattel/STM/Accelero_trial_1/Inc/gyro.h
+ /home/arattel/STM/Accelero_trial_1/Inc/gyro.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/lcd5110.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/lcd5110_ll.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/spi.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/gpio.h \
+ /home/arattel/STM/Accelero_trial_1/Inc/lcd5110_hal.h
 
 /home/arattel/STM/Accelero_trial_1/Inc/main.h:
 
@@ -124,12 +129,22 @@ Src/main.o: ../Src/main.c /home/arattel/STM/Accelero_trial_1/Inc/main.h \
 
 /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery.h:
 
-/home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/lsm303dlhc.h:
+/home/arattel/STM/Accelero_trial_1/Inc/lsm303dlhc.h:
 
-/home/arattel/STM32Cube/Repository/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F411E-Discovery/../Components/lsm303dlhc/../Common/accelero.h:
+/home/arattel/STM/Accelero_trial_1/Inc/accelero.h:
 
 /home/arattel/STM/Accelero_trial_1/Inc/stm32f411e_discovery_gyroscope.h:
 
 /home/arattel/STM/Accelero_trial_1/Inc/l3gd20.h:
 
 /home/arattel/STM/Accelero_trial_1/Inc/gyro.h:
+
+/home/arattel/STM/Accelero_trial_1/Inc/lcd5110.h:
+
+/home/arattel/STM/Accelero_trial_1/Inc/lcd5110_ll.h:
+
+/home/arattel/STM/Accelero_trial_1/Inc/spi.h:
+
+/home/arattel/STM/Accelero_trial_1/Inc/gpio.h:
+
+/home/arattel/STM/Accelero_trial_1/Inc/lcd5110_hal.h:

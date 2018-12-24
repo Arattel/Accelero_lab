@@ -8,6 +8,9 @@ C_SRCS += \
 ../Src/i2c.c \
 ../Src/i2s.c \
 ../Src/l3gd20.c \
+../Src/lcd5110.c \
+../Src/lcd5110_hal.c \
+../Src/lcd5110_ll.c \
 ../Src/lsm303dlhc.c \
 ../Src/main.c \
 ../Src/spi.c \
@@ -24,6 +27,9 @@ OBJS += \
 ./Src/i2c.o \
 ./Src/i2s.o \
 ./Src/l3gd20.o \
+./Src/lcd5110.o \
+./Src/lcd5110_hal.o \
+./Src/lcd5110_ll.o \
 ./Src/lsm303dlhc.o \
 ./Src/main.o \
 ./Src/spi.o \
@@ -40,6 +46,9 @@ C_DEPS += \
 ./Src/i2c.d \
 ./Src/i2s.d \
 ./Src/l3gd20.d \
+./Src/lcd5110.d \
+./Src/lcd5110_hal.d \
+./Src/lcd5110_ll.d \
 ./Src/lsm303dlhc.d \
 ./Src/main.d \
 ./Src/spi.d \

@@ -47,7 +47,7 @@
 #include "stm32f411e_discovery.h"
 
 /* Include Accelerometer component driver */
-#include "../Components/lsm303dlhc/lsm303dlhc.h"
+#include "lsm303dlhc.h"
    
 /** @addtogroup BSP
   * @{
